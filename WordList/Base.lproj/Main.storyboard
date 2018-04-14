@@ -72,6 +72,9 @@
                                 <state key="normal" title="答えを表示">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped" destination="agb-NV-pz7" eventType="touchUpInside" id="qff-qX-LLw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問題" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRq-Ol-Qqv">
                                 <rect key="frame" x="166" y="63" width="35" height="21"/>
@@ -108,14 +111,14 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="0G7-MP-Nx3" id="50U-Bb-j19"/>
-                        <outlet property="nextButton" destination="P0z-Ow-kIU" id="tZH-nN-03j"/>
+                        <outlet property="nextButton" destination="P0z-Ow-kIU" id="RSF-g3-Sgb"/>
                         <outlet property="questionLabel" destination="Zcu-Jw-sca" id="Pju-bc-DZK"/>
-                        <segue destination="Ira-NV-6kd" kind="presentation" id="KlA-NV-3dJ"/>
+                        <segue destination="Ira-NV-6kd" kind="presentation" identifier="toFinishView" id="KlA-NV-3dJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RP-nT-fKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765.60000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="690" y="800"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="f4z-3c-Nts">
